@@ -1,0 +1,72 @@
+.gear-icon{
+    padding-right: 15px;
+    font-size: 24px;
+    padding-top: 10px;
+}
+.header-avatar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .avatar-label{
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    letter-spacing: 1px !important;
+    color: #92949c;
+  }
+  .avatar-label:after{
+    content: "";
+    display: block;
+    /* margin: 0 auto; */
+    width: 37%;
+   // padding-top: 5px;
+    border-bottom: 2px solid currentColor;
+  }
+  
+  .welcome-text{
+    font-weight: bold;
+    font-size: 26px;
+    color: hotpink;
+    letter-spacing: 1px !important;
+  }
+
+  .welcome-text:after {
+    content: "";
+    display: block;
+    /* margin: 0 auto; */
+    width: 37%;
+   // padding-top: 5px;
+    border-bottom: 2px solid currentColor;
+}
+
+  .user-avatar{
+    background-size: 100% 100%;
+    border-radius: 50%;
+    width: 40%;
+    height: 140px;
+  }
+
+  ion-label{
+      color: dimgrey !important;
+  }
+
+  .camera-icon{
+    padding: 12px;
+    background: hotpink;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 31%;
+    color: white;
+    font-size: 20px;
+  }
+  .welcome-grid{
+      padding: 16px;
+      padding-top: 0px;
+  }

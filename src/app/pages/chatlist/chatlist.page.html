@@ -1,0 +1,40 @@
+<ion-app>
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-icon name="search-outline" class="search-icon"  (click)="search()" slot="end"></ion-icon>
+    <ion-title mode="md">
+      Messages
+    </ion-title>
+  </ion-toolbar>
+  <ion-searchbar [(ngModel)]="searchText" *ngIf="isSearchEnabled" color="light" mode="ios"  type="text" placeholder="Search"></ion-searchbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="none" *ngFor="let chatlist of chatlists | filter: searchText let i = index">
+    <ion-item >
+      <ion-avatar slot="start" (click)="home()">
+        <img [src]="chatlist.picture.large">
+      </ion-avatar>
+      <ion-label (click)="chat()">
+        <p class="chatlist-name">{{chatlist.name.first}}</p>
+        <p class="chatlist-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit illum facere nesciunt aperiam ex quisquam, ab non itaque sit iste. Sint vel esse veniam laboriosam nulla amet, placeat exercitationem!</p>
+      </ion-label>
+      <div slot="end" class="chat-timestamp">
+        <div class="time">
+          <small style="color: #666666;">5 min</small>
+        </div>
+        <div>
+          <ion-badge>
+            <small>25</small>
+          </ion-badge>
+        </div>
+      </div>
+    </ion-item>      
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button >
+      <ion-icon name="people-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+</ion-app>

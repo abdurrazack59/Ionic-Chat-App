@@ -1,0 +1,56 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tab/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title mode="ios">
+      Social Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-padding">
+        <div style="margin-bottom: 40px;margin-left: 4px; text-align: center;">
+          <h2>You need to sign in or create an account to continue.</h2>
+        </div>
+        <div class="margin">
+          <ion-button class="fb-btn" (click)="fbLogin()" expand="block" style="text-transform:none;">
+            Continue with Facebook
+            <ion-icon slot="start" class="fb-icon" name="logo-facebook"></ion-icon>
+          </ion-button>
+        </div>
+
+        <div class="margin">
+          <ion-button class="google-btn" expand="block" style="text-transform:none;">
+            Continue with Google
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="google-icon">
+          </ion-button>
+        </div>
+
+        <div class="margin">
+          <ion-button expand="block"  color="light" style="text-transform:none;">
+             Login
+          </ion-button>
+        </div>
+
+        <div class="margin">
+          <ion-button expand="block"  color="dark" style="text-transform:none;">
+            Register
+          </ion-button>
+        </div>
+
+        <div class="margin ion-text-center" style="margin-top: 40px;">
+          <p>By proceeding with creating an account you agree to the <span style="color: aqua;">Daily</span><span style="color: orangered;">Coding </span> 
+             <a>Terms & conditions</a>
+            and
+            <a>Privacy Policy.</a>
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

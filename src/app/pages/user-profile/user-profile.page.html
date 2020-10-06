@@ -1,0 +1,45 @@
+<ion-app>
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon name="settings-outline"  (click)="presentModal()" slot="end" class="gear-icon"></ion-icon>
+    </ion-toolbar>
+    <div class="welcome-grid">
+      <ion-item lines="none">
+        <span class="welcome-text">Welcome</span>
+        <span class="avatar-label">{{username}}</span>
+      </ion-item>
+    </div>
+    <div class="header-avatar">
+      <div (click)="presentActionSheet()">
+        <ion-icon class="camera-icon" name="camera"></ion-icon>
+      </div>
+      <div class="user-avatar" [style.background-image]="userAvatar"></div>
+    </div>
+  </ion-header>
+
+  <ion-content >
+    <ion-list *ngFor="let user of userData;">
+      <ion-item>
+        <ion-label>Username</ion-label>
+        <p slot="end">{{user.name.first}}</p>
+      </ion-item>
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <p slot="end">{{user.email}}</p>
+      </ion-item>
+      <ion-item>
+        <ion-label>Phone</ion-label>
+        <p slot="end">{{user.phone}}</p>
+      </ion-item>
+      <ion-item>
+        <ion-label>Date of birth</ion-label>
+        <p slot="end">{{user.dob.date | date}}</p>
+      </ion-item>
+      <ion-item>
+        <ion-label>Address</ion-label>
+        <p slot="end">{{user.location.country}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  
+</ion-app>

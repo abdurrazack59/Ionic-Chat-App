@@ -1,0 +1,68 @@
+
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+
+ion-header {
+  background: #5260ff;
+  border-radius: 0px 0px 40px 40px;
+}
+ion-title{
+  color: #fff !important;
+}
+
+ion-fab-button{
+  position: relative;
+  bottom: 15px;
+}
+
+.ellipse-icon{
+  color: #ffffff !important;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.header-avatar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 5px;
+}
+.avatar-label{
+  font-weight: bold;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.user-desig{
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: white ;
+}
+ion-avatar{
+  width: 75px;
+  height: 75px;
+}
+// Slider Style START 
+ion-slides {
+  height: 100%;
+}
+
+.slide-grid{
+  padding-top: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.slide-col{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+
+// Slider Style STOP

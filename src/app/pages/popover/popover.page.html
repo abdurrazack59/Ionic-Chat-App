@@ -1,0 +1,11 @@
+<ion-content class="no-scroll">
+  <ion-list>
+    <ion-item lines="none" >
+      <ion-label>Dark Mode</ion-label>
+      <ion-toggle slot="end" color="success" checked class="darkmode-toogle" [(ngModel)]="dark" (ionChange)="updateDarkMode()"></ion-toggle>
+    </ion-item>
+    <ion-item lines="none" (click)="navigatePage('paypal')">Paypal</ion-item>
+    <ion-item lines="none" (click)="navigatePage('pushnotification')">Push Notification</ion-item>
+    <ion-item lines="none" (click)="navigatePage('social-login')">Social Login</ion-item>
+  </ion-list>
+</ion-content>

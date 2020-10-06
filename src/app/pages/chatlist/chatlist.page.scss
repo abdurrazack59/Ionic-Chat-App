@@ -1,0 +1,73 @@
+ion-header {
+  background: darkslateblue;
+  border-radius: 0px 0px 37px 37px;
+ // height: auto;
+ transition: height 0.4s linear;
+}
+
+
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+.search-icon {
+  padding-right: 20px;
+  font-size: 24px;
+  color: white;
+}
+
+ion-avatar {
+  width: 53px;
+  height: 53px;
+}
+
+
+ion-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+ion-list{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.chatlist-name {
+  padding-bottom: 0px;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.chatlist-message {
+  font-size: 12px;
+}
+
+.chat-timestamp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.time{
+  margin-bottom: 4px !important;
+}
+
+ion-badge {
+  border-radius: 50%;
+  padding: 5px;
+  background: darkslateblue;
+}
+
+ion-searchbar {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 0px;
+  --icon-color: darkslateblue;
+}
+
+ion-fab-button{
+  --background: darkslateblue;
+  --color: white;
+}
